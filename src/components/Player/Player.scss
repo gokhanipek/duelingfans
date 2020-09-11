@@ -1,0 +1,31 @@
+.player__page--wrapper {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.4s;
+    .player__card {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #1493ff;
+        overflow: hidden;
+        background-image: url('./../../assets/bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 6px 0px #1f375b;
+        margin: 0px 10px;
+        .player__card--image {
+            width: 100%;
+        }
+    }
+    .player__name {
+        font-family: 'Shentox';
+        font-size: 1em;
+        color: #fff;
+        margin: 0px 10px;
+        background-color: #1f375b;
+        padding: 10px;
+    }
+    &:hover {
+        transform: scale(1.02);
+    }
+}
