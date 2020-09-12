@@ -1,51 +1,63 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import Player from './../Player/Player';
-import { sampleSize } from 'lodash';
+import { withRouter } from 'react-router-dom';
+import { connect } from "react-redux";
+import { getPlayerListRequest, incrementScore, incrementTurn, hideFppg } from './../../redux/actions';
 import './Duel.scss';
 
-
-const API = 'https://gist.githubusercontent.com/liamjdouglas/bb40ee8721f1a9313c22c6ea0851a105/raw/6b6fc89d55ebe4d9b05c1469349af33651d7e7f1/Player.json';
-const Duel = () => {
-
-    const [data, setData] = useState([]);
-    const [score, setScore] = useState(0);
-    const [turn, setTurn] = useState(0);
+const Duel = ({players, getPlayerListRequest, hideFppg, incrementScore, incrementTurn, score, turn, showFppg, history}) => {
 
     useEffect(() => {
-      fetch(API)
-        .then(response => response.json())
-        .then(({players}) => setData(players));
-    }, [])
+      getPlayerListRequest();
+    }, []);
 
     const style = {
       backgroundPositionX: `${turn !== 0 ? turn * 10: 0}%`
     };
 
-    let randomizePlayerArray = sampleSize(data, 2);
-    console.warn(randomizePlayerArray);
-
-    const onClickHandler = (fppg) => {
-      const highestNumber = Math.max(...randomizePlayerArray.map(player => player.fppg))
-      return fppg >= highestNumber ? setScore(score + 1) : setTurn(turn + 1) ;
+    const onClickHandler = fppg => {
+      if(showFppg) return;
+      const highestNumber = players.length > 0 && Math.max(...players.map(player => player.fppg))
+      fppg >= highestNumber ? incrementScore() : incrementTurn();
     }
-  
+
+    const nextRound = () => {
+      if(turn > 9) history.push(`/result&${score > 9 ? 'success' : 'fail'}`)
+      hideFppg();
+      getPlayerListRequest();
+    }
+
     return (
       <div className="duel__page--wrapper">
           <div className="duel__basketball--wrapper">
             <div className="duel__basketball" style={style}/>
           </div>
+          <p className="duel__score">Your score: <span>{score}</span></p>
           <div className="duel__player--wrapper">
-            {score < 10 && randomizePlayerArray.map(player => 
-              <Player 
+            {players.length > 0 && players.map(player =>
+              <Player
                 name={player.first_name + ' ' + player.last_name}
                 image={player.images.default.url}
                 fppg={player.fppg}
-                onClick={() => onClickHandler(player.fppg)}
+                showFppg={showFppg}
+                onClickHandler={() => onClickHandler(player.fppg)}
               />)}
           </div>
-             {score}
+          <div className="duel__page--button" onClick={() => nextRound()}>Next</div>
       </div>
     );
 }
 
-export default Duel
+const mapDispatchToProps = dispatch =>({
+  getPlayerListRequest: () => dispatch(getPlayerListRequest()),
+  incrementScore: () => dispatch(incrementScore()),
+  incrementTurn: () => dispatch(incrementTurn()),
+  hideFppg: () => dispatch(hideFppg()),
+})
+const mapStateToProps = ({data}) => ({ 
+  players: data.playerList,
+  turn: data.turn,
+  score: data.score,
+  showFppg: data.showFppg
+});
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Duel));

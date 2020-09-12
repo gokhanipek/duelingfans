@@ -4,6 +4,7 @@ import './App.css';
 import Home from './components/Home/Home';
 import Duel from './components/Duel/Duel';
 import Navbar from './components/Navbar/Navbar';
+import Result from './components/Results/Result';
 
 function App() {
 
@@ -11,15 +12,15 @@ function App() {
     <div className="App">
           <Router>
             <Navbar />
-
-              {/* A <Switch> looks through its children <Route>s and
-                  renders the first one that matches the current URL. */}
               <Switch>
                 <Route path="/home">
                   <Home />
                 </Route>
                 <Route path="/duel">
                   <Duel />
+                </Route>
+                <Route path="/result">
+                  <Result />
                 </Route>
                 <Route path="/">
                   <Home />
