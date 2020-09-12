@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/duelingfans/precache-manifest.3812a5cfc023528afbbcc0fa88b85b14.js"
+  "/duelingfans/precache-manifest.1d2da3a7def414dfb1c9f9c5f3e75734.js"
 );
 
 self.addEventListener('message', (event) => {
