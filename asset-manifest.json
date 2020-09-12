@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/duelingfans/static/css/main.d38afd12.chunk.css",
-    "main.js": "/duelingfans/static/js/main.4956dce5.chunk.js",
-    "main.js.map": "/duelingfans/static/js/main.4956dce5.chunk.js.map",
-    "runtime-main.js": "/duelingfans/static/js/runtime-main.03b5a176.js",
-    "runtime-main.js.map": "/duelingfans/static/js/runtime-main.03b5a176.js.map",
-    "static/js/2.7e8c9bb6.chunk.js": "/duelingfans/static/js/2.7e8c9bb6.chunk.js",
-    "static/js/2.7e8c9bb6.chunk.js.map": "/duelingfans/static/js/2.7e8c9bb6.chunk.js.map",
-    "index.html": "/duelingfans/index.html",
-    "precache-manifest.96a9971a6ac3fb9a23b93f2fbefa3bf1.js": "/duelingfans/precache-manifest.96a9971a6ac3fb9a23b93f2fbefa3bf1.js",
-    "service-worker.js": "/duelingfans/service-worker.js",
-    "static/css/main.d38afd12.chunk.css.map": "/duelingfans/static/css/main.d38afd12.chunk.css.map",
-    "static/js/2.7e8c9bb6.chunk.js.LICENSE.txt": "/duelingfans/static/js/2.7e8c9bb6.chunk.js.LICENSE.txt",
-    "static/media/Player.scss": "/duelingfans/static/media/bg.0a12e54a.png",
-    "static/media/curry.png": "/duelingfans/static/media/curry.6a30af2b.png",
-    "static/media/dueling-fans-inner-white.png": "/duelingfans/static/media/dueling-fans-inner-white.61b73df9.png"
+    "main.css": "./static/css/main.5cf08401.chunk.css",
+    "main.js": "./static/js/main.0fe209dc.chunk.js",
+    "main.js.map": "./static/js/main.0fe209dc.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.871dee85.js",
+    "runtime-main.js.map": "./static/js/runtime-main.871dee85.js.map",
+    "static/js/2.7e8c9bb6.chunk.js": "./static/js/2.7e8c9bb6.chunk.js",
+    "static/js/2.7e8c9bb6.chunk.js.map": "./static/js/2.7e8c9bb6.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.6d04555e4a4501d9c3a1a77fa1fa4ea3.js": "./precache-manifest.6d04555e4a4501d9c3a1a77fa1fa4ea3.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.5cf08401.chunk.css.map": "./static/css/main.5cf08401.chunk.css.map",
+    "static/js/2.7e8c9bb6.chunk.js.LICENSE.txt": "./static/js/2.7e8c9bb6.chunk.js.LICENSE.txt",
+    "static/media/Player.scss": "./static/media/bg.0a12e54a.png",
+    "static/media/curry.png": "./static/media/curry.6a30af2b.png",
+    "static/media/dueling-fans-inner-white.png": "./static/media/dueling-fans-inner-white.61b73df9.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.03b5a176.js",
+    "static/js/runtime-main.871dee85.js",
     "static/js/2.7e8c9bb6.chunk.js",
-    "static/css/main.d38afd12.chunk.css",
-    "static/js/main.4956dce5.chunk.js"
+    "static/css/main.5cf08401.chunk.css",
+    "static/js/main.0fe209dc.chunk.js"
   ]
 }
