@@ -22,7 +22,7 @@ const Duel = ({players, getPlayerListRequest, hideFppg, incrementScore, incremen
     }
 
     const nextRound = () => {
-      if(turn > 9) history.push(`/result&${score > 9 ? 'success' : 'fail'}`)
+      if(turn > 9 || score > 9) history.push(`/result&${score > 9 ? 'success' : 'fail'}`)
       hideFppg();
       getPlayerListRequest();
     }
