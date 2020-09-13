@@ -2,20 +2,20 @@ import React, {useEffect} from 'react'
 import { withRouter, useLocation } from "react-router";
 import { connect } from "react-redux";
 import { resetGame } from './../../redux/actions';
-import Jordan from './../../assets/loser.png';
-import Kobe from './../../assets/kobe-winner.png';
+import jordan from './../../assets/loser.png';
+import kobe from './../../assets/kobe-winner.png';
 import './Result.scss';
 
 export const Winner = () =>
 <div className="result--wrapper">
-    <img className="result--image" src={Kobe} alt="kobe" />
+    <img className="result--image" src={kobe || 'https://raw.githubusercontent.com/gokhanipek/duelingfans/master/src/assets/kobe-winner.png'} alt="kobe" />
     <p className="result--text">Winner!</p>
 </div>
 
 
 export const Loser = () => 
 <div className="result--wrapper">
-    <img className="result--image" src={Jordan} alt="jordan" />
+    <img className="result--image" src={jordan || 'https://raw.githubusercontent.com/gokhanipek/duelingfans/master/src/assets/loser.png'} alt="jordan" />
     <p className="result--text">Loser!</p>
 </div>
 
