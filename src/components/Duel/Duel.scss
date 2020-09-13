@@ -6,8 +6,15 @@
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
+    @media screen and (max-width: 992px) {
+        flex-wrap: nowrap;
+        padding-top: 10px;
+    }
     .duel__basketball--wrapper {
         width: 500px;
+        @media screen and (max-width: 992px) {
+            width: 70%;
+        }
         .duel__basketball {
             width: 100%;
             height: 70px;
@@ -21,11 +28,17 @@
     .duel__player--wrapper {
         flex-direction: row;
         display: flex;
+        @media screen and (max-width: 992px) {
+            flex-direction: column;
+        }
     }
     .duel__score {
         font-size: 2em;
         font-family: 'Shentox';
         color: #1f375b;
+        @media screen and (max-width: 992px) {
+            margin: 0;
+        }
         span {
             color: #fff;
         }

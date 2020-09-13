@@ -1,10 +1,9 @@
-import { put, takeEvery, call, delay } from "redux-saga/effects";
+import { put, takeEvery } from "redux-saga/effects";
 import axios from 'axios';
 import { sampleSize } from 'lodash';
 import { 
     GET_PLAYER_LIST_REQUEST,
     getPlayerListResponse,
-    INCREMENT_SCORE,
  } from "./actions";
 
 export function* getPlayerListRequest(action) {

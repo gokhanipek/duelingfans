@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Duel from './components/Duel/Duel';
 import Navbar from './components/Navbar/Navbar';
 import Result from './components/Results/Result';
+import './App.css';
 
-function App() {
+function App({turn, score}) {
 
   return (
     <div className="App">
@@ -21,6 +21,9 @@ function App() {
                 </Route>
                 <Route path="/result">
                   <Result />
+                </Route>
+                <Route path="/succes/:type">
+                  <Result/>
                 </Route>
                 <Route path="/">
                   <Home />

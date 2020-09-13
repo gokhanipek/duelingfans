@@ -3,7 +3,11 @@
     flex-direction: column;
     cursor: pointer;
     transition: transform 0.4s;
+    @media screen and (max-width: 992px) {
+        margin-bottom: 10px;
+    }
     .player__card {
+        position: relative;
         width: 300px;
         height: 300px;
         border: 1px solid #1493ff;
@@ -13,8 +17,22 @@
         background-repeat: no-repeat;
         box-shadow: 0 0 6px 0px #1f375b;
         margin: 0px 10px;
+        @media screen and (max-width: 992px) {
+            width: 200px;
+            height: 200px;
+        }
         .player__card--image {
             width: 100%;
+        }
+        .player__fppg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            margin: 0;
+            padding: 5px;
+            color: #fff;
+            background-color: #1f375b;
         }
     }
     .player__name {

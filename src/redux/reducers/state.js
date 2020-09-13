@@ -26,6 +26,10 @@ function addReducer(state = initialState, {type, data}) {
         ...state,
         showFppg: false
       }
+    case 'RESET_GAME':
+      return {
+        ...initialState
+      }
     default:
       return state;
   }
