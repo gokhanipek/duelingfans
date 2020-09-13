@@ -22,7 +22,7 @@ function App({turn, score}) {
                 <Route path="/result">
                   <Result />
                 </Route>
-                <Route path="/succes/:type">
+                <Route path="/success/:type">
                   <Result/>
                 </Route>
                 <Route path="/">
