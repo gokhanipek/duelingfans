@@ -11,6 +11,7 @@ const Home = () => {
                 <img className="home__page--player" src={curry} alt="cover" />
             </div>
             <Link className="home__page--button" to="/duel">Play Now!</Link>
+            <p className="home__page--info">Guess which player has a better score! You can always skip to next set if you are not sure! Win prizes!<span>(This feature is currently in development)</span></p>
         </div>
     )
 }

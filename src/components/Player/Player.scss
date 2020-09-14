@@ -18,8 +18,9 @@
         box-shadow: 0 0 6px 0px #1f375b;
         margin: 0px 10px;
         @media screen and (max-width: 992px) {
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
+            margin: 0px 5px;
         }
         .player__card--image {
             width: 100%;
@@ -42,6 +43,9 @@
         margin: 0px 10px;
         background-color: #1f375b;
         padding: 10px;
+        @media screen and (max-width: 992px) {
+            margin: 0px 5px;
+        }
     }
     &:hover {
         transform: scale(1.02);

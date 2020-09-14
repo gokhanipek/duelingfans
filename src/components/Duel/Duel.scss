@@ -28,9 +28,6 @@
     .duel__player--wrapper {
         flex-direction: row;
         display: flex;
-        @media screen and (max-width: 992px) {
-            flex-direction: column;
-        }
     }
     .duel__score {
         font-size: 2em;
