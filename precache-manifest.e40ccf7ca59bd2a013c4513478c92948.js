@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "15c5886b9384357c5df399613e0d7a07",
+    "revision": "91836c6225cd459191a28925b35feb24",
     "url": "/duelingfans/index.html"
   },
   {
