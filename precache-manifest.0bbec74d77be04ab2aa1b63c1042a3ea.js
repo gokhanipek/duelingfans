@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "91836c6225cd459191a28925b35feb24",
+    "revision": "c4760de236e992e64f2d7c860109cfd9",
     "url": "/duelingfans/index.html"
   },
   {
-    "revision": "2ff10ba3354a16a7414b",
-    "url": "/duelingfans/static/css/main.35ecc283.chunk.css"
+    "revision": "06317c5d727b8b43e61c",
+    "url": "/duelingfans/static/css/main.48c0c7ce.chunk.css"
   },
   {
     "revision": "3ff4e6e147448e88b48e",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/duelingfans/static/js/2.600aaaf6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2ff10ba3354a16a7414b",
+    "revision": "06317c5d727b8b43e61c",
     "url": "/duelingfans/static/js/main.fd20b9e7.chunk.js"
   },
   {
