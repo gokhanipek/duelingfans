@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/duelingfans/static/css/main.ffb91240.chunk.css",
-    "main.js": "/duelingfans/static/js/main.e07d92a4.chunk.js",
-    "main.js.map": "/duelingfans/static/js/main.e07d92a4.chunk.js.map",
+    "main.css": "/duelingfans/static/css/main.35ecc283.chunk.css",
+    "main.js": "/duelingfans/static/js/main.fd20b9e7.chunk.js",
+    "main.js.map": "/duelingfans/static/js/main.fd20b9e7.chunk.js.map",
     "runtime-main.js": "/duelingfans/static/js/runtime-main.03b5a176.js",
     "runtime-main.js.map": "/duelingfans/static/js/runtime-main.03b5a176.js.map",
     "static/js/2.600aaaf6.chunk.js": "/duelingfans/static/js/2.600aaaf6.chunk.js",
     "static/js/2.600aaaf6.chunk.js.map": "/duelingfans/static/js/2.600aaaf6.chunk.js.map",
     "index.html": "/duelingfans/index.html",
-    "precache-manifest.b8f115908c0f4e2d4461b3265a4bd4b9.js": "/duelingfans/precache-manifest.b8f115908c0f4e2d4461b3265a4bd4b9.js",
+    "precache-manifest.b0b2b18a40beca22d7996ad10c65cac1.js": "/duelingfans/precache-manifest.b0b2b18a40beca22d7996ad10c65cac1.js",
     "service-worker.js": "/duelingfans/service-worker.js",
-    "static/css/main.ffb91240.chunk.css.map": "/duelingfans/static/css/main.ffb91240.chunk.css.map",
+    "static/css/main.35ecc283.chunk.css.map": "/duelingfans/static/css/main.35ecc283.chunk.css.map",
     "static/js/2.600aaaf6.chunk.js.LICENSE.txt": "/duelingfans/static/js/2.600aaaf6.chunk.js.LICENSE.txt",
     "static/media/Shentox W04 Bold.ttf": "/duelingfans/static/media/Shentox W04 Bold.557661ea.ttf",
     "static/media/Player.scss": "/duelingfans/static/media/bg.0a12e54a.png",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.03b5a176.js",
     "static/js/2.600aaaf6.chunk.js",
-    "static/css/main.ffb91240.chunk.css",
-    "static/js/main.e07d92a4.chunk.js"
+    "static/css/main.35ecc283.chunk.css",
+    "static/js/main.fd20b9e7.chunk.js"
   ]
 }
