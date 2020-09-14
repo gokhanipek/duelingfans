@@ -36,6 +36,7 @@ const Duel = ({players, getPlayerListRequest, hideFppg, incrementScore, incremen
           <div className="duel__player--wrapper">
             {players.length > 0 && players.map(player =>
               <Player
+                id="player"
                 name={player.first_name + ' ' + player.last_name}
                 image={player.images.default.url}
                 fppg={player.fppg}
