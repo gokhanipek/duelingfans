@@ -27,3 +27,4 @@ Just use below commands to start the project on your local server.
 - Axios
 - Jest
 - Enzyme
+- lodash
